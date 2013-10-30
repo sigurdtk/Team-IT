@@ -1,4 +1,0 @@
-Team-IT
-=======
-
-Nettbutikk koding

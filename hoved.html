@@ -2,90 +2,181 @@
 	<head>
 		<title>Der du gjor datahandelen din</title>
 	<link rel="stylesheet" type="text/css" href="hoved.css">
+	<link rel='stylesheet' type='text/css' href='styles.css' />
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 	</head>
 	<body>
-<div id="container"container>
+<div id="container">
+
 
 
 <div id="header">
-<div class="title">Datakjop.no</div>
+
 
 </div>
 
-<div id="menubar">
-	<div class="menulinks">
 
-	<ul>
-<li><a href="#">Hjem</a></li>
-<li><a href="#">Kontakt oss</a></li>
-<li><a href="#">Tilbakemeldinger</a></li>
+<div id='cssmenu'>
+<ul>
+   <li class='active'><a href='hoved.html'><span>Hjem</span></a></li>
+   <li class='has-sub'><a href='#'><span>Produkter</span></a>
+      <ul>
+         <li><a href='#'><span>Mobil</span></a></li>
+         <li><a href='#'><span>Stasjonær</span></a></li>
+         <li class='last'><a href='#'><span>Bærbar</span></a></li>
+      </ul>
+   </li>
+   <li class='has-sub'><a href='#'><span>Om oss</span></a>
+      <ul>
+         <li><a href='#'><span>Gjestebok</span></a></li>
+         <li class='last'><a href='#'><span>Hvem er vi</span></a></li>
+      </ul>
+   </li>
+   <li class='last'><a href='#'><span>Kontakt oss</span></a></li>
 </ul>
-</div> <!-- menulinks div lukke -->
+</div>
 
 
 
 
-</div> <!-- container lukke -->
-<div id="lmargin">Kategorier:
-<div class="lmenu">
-<li><a href="#">TV</a></li>
-<li><a href="#">Data</a></li>
-<li><a href="#">Telefon</a></lI>
-<li><a href="#">Hardware</a></li>
-
-
-</div> <!-- lmenu lukke -->
 
 
 
 
-</div> <!-- lmaring lukke -->
 
 
-<div id="rmargin">rmargin</div>
 
-
-<div id="mainbody">
-	<table>
-		<thead>
-		    <th>Produkter</th>
-		</thead>
-		    <tr>
-		        <td><a href="#"><img src="http://www.mpx.no/img/p/800/795358ac-097a-4e21-8b4b-2c375b5c594b.jpg"/>
-				<FORM METHOD="LINK" ACTION="page1.htm"> <INPUT TYPE="submit" VALUE="Legg i handlevognen"></td>
-		        <td><a href="#"><img src="http://www.mpx.no/img/p/1200/d2650615-54f8-4af9-94cf-26dd964f0938.jpg"/></a>
-				<FORM METHOD="LINK" ACTION="page1.htm"> <INPUT TYPE="submit" VALUE="Legg i handlevognen"></td>
-		        <td><a href="#"><img src="http://www.mpx.no/img/p/1200/a4d4021f-47f3-4ccd-a095-0a156c2edba0.jpg"/><a/>
-				<FORM METHOD="LINK" ACTION="page1.htm"> <INPUT TYPE="submit" VALUE="Legg i handlevognen"></a></td>
-		    </tr>
-				
-		    <tr>
-		    <td><a href="#"><img src="http://www.mpx.no/img/p/1200/902e1994-0d78-4a99-90e3-160676829f5d.jpg"/></a>
-			<FORM METHOD="LINK" ACTION="page1.htm"> <INPUT TYPE="submit" VALUE="Legg i handlevognen"></td>
-		    <td><a href="#"><img src="http://www.mpx.no/img/p/200/3c57ff62-ef4e-4bda-9255-6830be5433f5.jpg"/></a>
-			<FORM METHOD="LINK" ACTION="page1.htm"> <INPUT TYPE="submit" VALUE="Legg i handlevognen"></td>
-		    <td><a href="#"><img src="http://www.mpx.no/img/p/1200/e43074a0-e7d9-41cb-8d89-e1cc8a44c877.jpg"/></a>
-			<FORM METHOD="LINK" ACTION="page1.htm"> <INPUT TYPE="submit" VALUE="Legg i handlevognen"></td>
-		        
-		    </tr>
-		    
-		    <tr>
-		    <td><a href="#"><img src="http://www.upwithtrees.org/wp-content/uploads/2013/07/tree26.jpg"/>
-			<FORM METHOD="LINK" ACTION="page1.htm"> <INPUT TYPE="submit" VALUE="Legg i handlevognen"></a></td>
-		    <td><a href="#"><img src="http://www.mpx.no/img/p/800/4ee7b7a9-0586-4949-a57b-923453adb9c9.jpg"/>
-			<FORM METHOD="LINK" ACTION="page1.htm"> <INPUT TYPE="submit" VALUE="Legg i handlevognen"></a></td>
-		    <td><a href="#"><img src="http://www.mpx.no/img/p/1200/5cbe8d1a-55ce-51b3-7f2b-1615b71dc1ed.jpg"/>
-			<FORM METHOD="LINK" ACTION="page1.htm"> <INPUT TYPE="submit" VALUE="Legg i handlevognen"></a></td>    
-		    </tr>
-		    
-</table>
 
 <div>
 
 </FORM>
 </div>
 <!-- knapp -->
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="jquery,ui,easy,easyui,web">
+	<meta name="description" content="easyui help you build your web page easily!">
+	<title>jQuery EasyUI handlevogn</title>
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+	<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+	<script>
+		var data = {"total":0,"rows":[]};
+		var totalCost = 0;
+		
+		$(function(){
+			$('#cartcontent').datagrid({
+				singleSelect:true
+			});
+			$('.item').draggable({
+				revert:true,
+				proxy:'clone',
+				onStartDrag:function(){
+					$(this).draggable('options').cursor = 'not-allowed';
+					$(this).draggable('proxy').css('z-index',10);
+				},
+				onStopDrag:function(){
+					$(this).draggable('options').cursor='move';
+				}
+			});
+			$('.cart').droppable({
+				onDragEnter:function(e,source){
+					$(source).draggable('options').cursor='auto';
+				},
+				onDragLeave:function(e,source){
+					$(source).draggable('options').cursor='not-allowed';
+				},
+				onDrop:function(e,source){
+					var name = $(source).find('p:eq(0)').html();
+					var pris = $(source).find('p:eq(1)').html();
+					addProduct(name, parseFloat(pris.split('kr')[1]));
+				}
+			});
+		});
+		
+		function addProduct(name,pris){
+			function add(){
+				for(var i=0; i<data.total; i++){
+					var row = data.rows[i];
+					if (row.name == name){
+						row.quantity += 1;
+						return;
+					}
+				}
+				data.total += 1;
+				data.rows.push({
+					name:name,
+					quantity:1,
+					price:pris
+				});
+			}
+			add();
+			totalCost += pris;
+			$('#cartcontent').datagrid('loadData', data);
+			$('div.cart .total').html('Totalt: '+totalCost+'kr');
+		}
+	</script>
+	
+	
+	<h3>Utvalg </h3>
+	
+	
+	<ul class="products">
+	
+		<li>
+			<a href="#" class="item">
+				<img src="http://www.mpx.no/img/p/1200/e43074a0-e7d9-41cb-8d89-e1cc8a44c877.jpg"/>
+				<div>
+					<p>Bærbar pc</p>
+					<p hidden>Pris kr 6000</p hidden>
+				</div>
+			</a>
+		</li>
+		
+		<li>
+			<a href="#" class="item">
+				<img src="http://www.mpx.no/img/p/1200/902e1994-0d78-4a99-90e3-160676829f5d.jpg"/>
+				<div>
+					<p>TV</p>
+					<p hidden>Pris kr 5000</p hidden>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="http://www.mpx.no/img/p/200/3c57ff62-ef4e-4bda-9255-6830be5433f5.jpg"/>
+				<div>
+					<p>Hodetelefoner</p>
+					<p hidden>Pris kr 800</p hidden>
+				</div>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="item">
+				<img src="http://www.mpx.no/img/p/1200/e43074a0-e7d9-41cb-8d89-e1cc8a44c877.jpg"/>
+				<div>
+					<p>Bærbar pc</p>
+					<p hidden>Pris kr 6000</p hidden>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<div class="cart">
+		<h1>Handlevogn</h1>
+		<div style="background:#fff">
+		<table id="cartcontent" fitColumns="true" style="width:300px;height:auto;">
+			<thead>
+				<tr>
+					<th field="name" width=140>Navn</th>
+					<th field="quantity" width=60 align="right">Antall</th>
+					<th field="price" width=60 align="right">Pris</th>
+				</tr>
+			</thead>
+		</table>
+		</div>
+		<p class="total">Totalt: 0</p>
+		<h2>Dra for å legge til</h2>
+	</div>
 
 <div id="footer">footer</div>
 

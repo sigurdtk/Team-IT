@@ -1,3 +1,19 @@
+#body 
+{
+background-image:url(http://images.wikia.com/fallout/images/2/20/NukaPedia_Background_White_Metal_JPG5-_Rusted.jpg);
+background-repeat:no-repeat;
+background-position:center;
+} 
+
+h3
+{
+text-align: left;
+font-size:35px;
+color: #ffffff;
+
+}
+
+
 #containter {
 	border: 1px solid "red";
 	width: 900px;
@@ -10,86 +26,99 @@ img {
 	height:150px;
 }
 
-table, td {
-	border: 1px #70b8ff solid;
+
+
+.text_button {
+   border: none;
+   background-color: none;
+   padding: 0;
+   text-decoration: none; 
+   color: #000;  
 }
+
+
+
 
 #header	{
 	position: center;
-	height: 200px;
+	height: 180px;
 	width: 1050;
-	border: 1px solid #000;
-	background-image: url(http://slatehitech.homestead.com/bigstockphoto_Header_regarding_technology_an_792246.jpg);
+	background-image: url(datakjop.png);
+	-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 #menubar	{
 	height: 50px; 
 	width: 1050px;
-	border: 1px solid #green; 
-	background-color: lightblue;
+	border: 5px solid #black; 
+	background-color: #0772A1;
 }
+.søk {
+	position: top; 
+	text-align: right;
+	padding-bottom: 50px;
+	
+}
+
+
+
+
+#sokbar {
+	height: 50x;
+	width: 1050px;
+	color: black;
+	background-color: #lightblue;
+}
+.soklinks {
+	height: 40px;
+	text-align: center;
+}
+
+.soklinks ul {
+	margin: auto; 
+	position: relative; top: 15px; 
+}
+
+.soklinks li { 
+	padding: 2px 2px 2px 2px;
+	margin: 0px 20px 0px 0px;
+	list-style: none; 
+	display: inline; 
+	boder 1 px solid: #0000;
+}
+.soklinks li a {
+	color: #black;
+	text-decoration: underline;
+	font-size: 30px;
+	padding: 0px;
+}
+
+
+
+
+	
+ }
+ 
 #mainbody	{
 	width: 900px;
 	height: auto;
 	margin: auto;
 }
-.menulinks {
-	height: 40px;
-	text-align: center;
-	border: #0000;
-}
 
-.menulinks ul {
-	margin: auto; 
-	position: relative; top: 15px; 
-}
-
-.menulinks li { 
-	padding: 2px 2px 2px 2px;
-	margin: 0px 20px 0px 0px;
-	list-style: none; 
-	display: inline; 
-	boder 1 px solid #0000;
-}
-.menulinks li a {
-	color: #black;
-	text-decoration: none;
-	font-size: 16px;
-	padding: 0px;
-}
-
-.menulinks li a:hover {
-	color: #red;
-	text-decoration: underline;
-	font-size: 16px;
-	padding: 0px;
 }
 
 #lmargin {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top:150x;
+	margin-bottom:150px;
 	height: auto;
-	width: 50px;
+	width: 150px;
 	float: left;
+	background-color: #3BA3D0;
 }
-.lmenu {
-	border-top:1px solid #ccc;
-	float: left;
-	height: auto;
-	width: 50px;
-	list-style-type:none;
-}
-.lmenu li {
-	border-bottom: 1px solid #ccc;
-	height; auto;
-}
-.lmenu li a {
-	display: black;
-	padding: 5px 0px 10px 5px;
-	text-decoration:none;
-	color: black;
-}
-.lmenu li a:hover {
-	color: #blue;
+
 }
 #rmargin {
 	margin-top: 50px;
@@ -104,3 +133,88 @@ table, td {
 	height: 50px;
 	border: 1px solid #black;
 }
+
+
+.products{
+			list-style:none;
+			margin-right:300px;
+			padding:0px;
+			height:100%;
+		}
+		.products li{
+			display:inline;
+			float:left;
+			margin:10px;
+		}
+		.item{
+			display:block;
+			text-decoration:none;
+			
+		
+			}
+		
+		.item img{
+
+	 
+			
+			
+		}
+		.item p{
+  margin:0;
+  padding: 7px 6px 4;
+  background: #ff8000 url(images/overlay.png) repeat-x 0 -110px;
+  line-height: 100%;
+  border-radius: 1em;
+  font: normal 0.5333333333333333em Arial, Helvetica, sans-serif;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius:5px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-align:center;
+  color:#e7e5e5;
+  font-size:13px;
+  font-weight: bold;
+  
+			
+		}
+		.cart{
+			position:absolute;
+			right:460px;
+			top:240px;
+			width:300px;
+			height:65%;
+			background: #ff8000 url(images/overlay.png) repeat-x 0 -110px;
+			line-height: 100%;
+			border-radius: 9em;
+			font: normal 0.5333333333333333em Arial, Helvetica, sans-serif;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+			text-decoration:none;
+		}
+		h1{
+			text-align:center;
+			color:#e7e5e5;
+			font-size:22px;
+			font-weight: bold;
+		}
+		h2{
+			position:absolute;
+			left:10px;
+			bottom:20px;
+			color:#e7e5e5;
+			font-size:16px;
+			font-weight: bold;
+		}
+		.total{
+			margin:8;
+			text-align:right;
+			padding-right:20px;
+			color:#e7e5e5;
+			font-size:18px;
+			font-weight: bold;
+		}
+
