@@ -1,0 +1,141 @@
+#wrap { 
+	width: 900px; 
+	margin: 0 auto; 
+}
+{
+background-position:center;
+} 
+
+h3
+{
+text-align: left;
+font-size:35px;
+color: #ffffff;
+
+}
+
+
+#containter {
+	border: 1px solid "red";
+	width: 900px;
+	height: auto;
+	margin: auto;
+	border: 1px solid #000;
+}
+img {
+	width:150px;
+	height:150px;
+}
+
+
+
+.text_button {
+   border: none;
+   background-color: none;
+   padding: 0;
+   text-decoration: none; 
+   color: #000;  
+}
+
+
+
+
+#header	{
+ 
+	margin: 0 auto;
+	position: center;
+	height: 180px;
+	width: 1050;
+	background-image: url(datakjop.png);
+	-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+#menubar	{
+	height: 50px; 
+	width: 1050px;
+	border: 5px solid #black; 
+	background-color: #0772A1;
+}
+.søk {
+	position: top; 
+	text-align: right;
+	padding-bottom: 50px;
+	
+}
+
+
+
+
+#sokbar {
+	height: 50x;
+	width: 1050px;
+	color: black;
+	background-color: #lightblue;
+}
+.soklinks {
+	height: 40px;
+	text-align: center;
+}
+
+.soklinks ul {
+	margin: auto; 
+	position: relative; top: 15px; 
+}
+
+.soklinks li { 
+	padding: 2px 2px 2px 2px;
+	margin: 0px 20px 0px 0px;
+	list-style: none; 
+	display: inline; 
+	boder 1 px solid: #0000;
+}
+.soklinks li a {
+	color: #black;
+	text-decoration: underline;
+	font-size: 30px;
+	padding: 0px;
+}
+
+
+
+
+	
+ }
+ 
+#mainbody	{
+	width: 900px;
+	height: auto;
+	margin: auto;
+}
+
+}
+
+#lmargin {
+	margin-top:150x;
+	margin-bottom:150px;
+	height: auto;
+	width: 150px;
+	float: left;
+	background-color: #3BA3D0;
+}
+
+}
+#rmargin {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: auto;
+	width: 50px;
+	float: right;
+	border: 1px solid #black;
+}	
+#footer {
+	clear: both;
+	height: 50px;
+	border: 1px solid #black;
+}
+
+
+
